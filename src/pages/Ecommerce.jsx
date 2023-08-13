@@ -128,11 +128,11 @@ const Ecommerce = () => {
               </div>
             </div>
             <div>
-              {/* <Stacked
+              <Stacked
                 //  currentMode={currentMode}
                 width="320px"
                 height="360px"
-              /> */}
+              />
             </div>
           </div>
         </div>
