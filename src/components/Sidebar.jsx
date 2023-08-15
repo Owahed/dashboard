@@ -31,7 +31,7 @@ const Sidebar = () => {
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
               <SiShopware />
-              <span>Shoppy</span>
+              <span>Hello Shop</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
@@ -55,6 +55,7 @@ const Sidebar = () => {
                     to={`/${link.name}`}
                     key={link.name}
                     onClick={handleCloseSideBar}
+                    style={{ backgroundColor: "gray" }}
                     // style={({ isActive }) => ({
                     //   backgroundColor: isActive ? currentColor : "",
                     // })}
