@@ -12,11 +12,12 @@ const Button = ({
   width,
 }) => {
   const { setIsClicked, initialState } = useStateContext();
+  // console.log(initialState);
 
   return (
     <button
       type="button"
-      // onClick={() => setIsClicked(initialState)}
+      onClick={() => setIsClicked(initialState)}
       style={{ backgroundColor: bgColor, color, borderRadius }}
       className={` text-${size} p-3 w-${width} hover:drop-shadow-xl hover:bg-${bgHoverColor}`}
     >
