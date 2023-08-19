@@ -10,6 +10,7 @@ const Cart = () => {
   const [count, setCount] = useState(1);
   const [price, setPrice] = useState(cartData[0].price);
   const { currentColor } = useStateContext();
+
   const handelCountMinus = () => {
     if (count <= 0) {
       setCount(0);
@@ -23,7 +24,6 @@ const Cart = () => {
     setCount(count + 1);
     setPrice(price + 250);
   };
-  console.log(price);
   return (
     <div className="bg-half-transparent w-full fixed nav-item top-0 right-0 ">
       <div className="float-right h-screen  duration-1000 ease-in-out dark:text-gray-200 transition-all dark:bg-[#484B52] bg-white md:w-400 p-8">
